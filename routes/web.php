@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcomes');
+    return view('welcome');
 });
+Route::get('foo', function () {
+    return 'Hello Oscar';
+});
+
+Route::get('permiso', 'PermisoController@index');
