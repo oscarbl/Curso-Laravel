@@ -1,34 +1,21 @@
-<!-- form start -->
-<form role="form">
-    <div class="card-body">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <div class="input-group">
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                </div>
-                <div class="input-group-append">
-                    <span class="input-group-text" id="">Upload</span>
-                </div>
-            </div>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+<div class="card-body">
+    <div class="form-group row">
+        <label for="nombre" class="col-lg-3 col-form-label">Nombre</label>
+        <div class="col-lg-9">
+            <input type="text" form-control" id="nombre" class="form-control" required value="" placeholder="Nombre">
         </div>
     </div>
-    <!-- /.card-body -->
+    <div class="form-group row">
+        <label for="url" class="col-lg-3 col-form-label">URL</label>
+        <div class="col-lg-9">
+            <input type="text" form-control" id="url" class="form-control" required value="" placeholder="url">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="icono" class="col-lg-3 col-form-label">Icono</label>
+        <div class="col-lg-9">
+            <input type="text" form-control" id="icono" class="form-control" value="" placeholder="icono">
+        </div>
+    </div>
 
-    <div class="card-footer">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+</div>
