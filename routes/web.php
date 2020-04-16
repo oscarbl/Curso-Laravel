@@ -13,11 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('foo', function () {
-    return 'Hello Oscar';
-});
-
-Route::get('permiso', 'PermisoController@index');
+Route::get('/', 'InicioController@index');
