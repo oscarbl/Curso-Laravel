@@ -4,6 +4,8 @@ Sistemas de Menus
 @endsection
 
 @section('contenido')
+@include('includes.form-error')
+@include('includes.mensaje')
 <div class="card card-danger">
     <div class="card-header with-border">
         <h3 class="card-title">Crear Menu</h3>
