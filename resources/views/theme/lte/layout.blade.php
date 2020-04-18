@@ -10,15 +10,17 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset("assets/$theme/plugins/fontawesome-free/css/all.min.css")}}">
+    <link rel="stylesheet"
+        href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/adminlte.min.css")}}">
+    @yield('styles')
     <!-- Custom Theme style -->
     <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    @yield('styles')
 </head>
 
 <body class="hold-transition sidebar-mini layout-boxed">
@@ -48,6 +50,7 @@
     </script>
     <!-- AdminLTE App -->
     <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"> </script>
+    @yield('scriptsPlugins')
     <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"> </script>
     <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"> </script>
     <script src="{{asset("assets/js/funciones.js")}}"> </script>

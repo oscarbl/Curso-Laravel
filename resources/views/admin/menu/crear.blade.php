@@ -17,7 +17,8 @@ Sistemas de Menus
     <!-- /.card-header -->
     <div class="card-body p-0">
         <!-- form start -->
-        <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST">
+        <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST"
+            autocomplete="off">
             @csrf
             @include('admin.menu.form')
             <!-- /.card-body -->
