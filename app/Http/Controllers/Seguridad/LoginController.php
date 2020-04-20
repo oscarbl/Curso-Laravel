@@ -8,7 +8,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    //use AuthenticatesUsers;
+    use AuthenticatesUsers;
+
     protected $redirectTo = '/admin';
 
     public function __construct()
@@ -23,10 +24,5 @@ class LoginController extends Controller
     public function username()
     {
         return 'usuario';
-    }
-
-    public function login()
-    {
-        dd('Hola login');
     }
 }
