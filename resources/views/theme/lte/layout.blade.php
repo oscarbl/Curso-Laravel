@@ -20,6 +20,7 @@
     <!-- Custom Theme style -->
     <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
     <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
@@ -53,6 +54,9 @@
     @yield('scriptsPlugins')
     <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"> </script>
     <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"> </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="{{asset("assets/js/scripts.js")}}"></script>
     <script src="{{asset("assets/js/funciones.js")}}"> </script>
     @yield('scripts')
     </script>
