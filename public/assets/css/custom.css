@@ -16,3 +16,11 @@ label.requerido:after{
 .width70{
     width: 90px !important;
 } 
+.pl-20{
+    padding-left:20px !important;
+}
+.pl-30{
+    padding-left:30px !important;
+}
+.pl-40{
+    padding-left:40px !important;
