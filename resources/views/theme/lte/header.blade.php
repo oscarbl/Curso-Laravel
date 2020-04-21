@@ -2,12 +2,12 @@
     <!-- Logo -->
     <a href="/" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>B</b>OB</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
+        <span class="logo-lg"><b>Biblioteca</b>Ing. OB</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light pull-right">
         <!-- Sidebar toggle button-->
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
             <span class="sr-only">Toggle navigation</span>
@@ -116,7 +116,7 @@
                                 alt="User Image">
 
                             <p>
-                                Alexander Pierce - Web Developer
+                                {{session()->get('nombre_usuario') ?? 'Invitado'}}- Web Developer
                                 <small>Member since Nov. 2012</small>
                             </p>
                         </li>
@@ -124,13 +124,13 @@
                         <li class="user-body">
                             <div class="row">
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
+                                    <a href="#">- Seguidores - </a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
+                                    <a href="#"> - Sales - </a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
+                                    <a href="#"> - Friends - </a>
                                 </div>
                             </div>
                         </li>

@@ -1,6 +1,6 @@
 @if (session('mensaje'))
 
-<div class="alert alert-success alert-dismissible" data-auto-dismiss="3000">
+<div class="alert alert-success alert-dismissible" data-auto-dismiss="2000">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
     <h5><i class="icon fas fa-check"></i> Mensaje Sistema Biblioteca!</h5>
     <ul>
