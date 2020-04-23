@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('theme.lte.aside', function ($view) {
+        View::composer("theme.lte.aside", function ($view) {
             $menus = Menu::getMenu(true);
             $view->with('menusComposer', $menus);
         });

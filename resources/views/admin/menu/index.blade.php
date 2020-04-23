@@ -16,7 +16,7 @@ Menú
 @endsection
 
 @section('contenido')
-<div class="row">
+<div class="">
     <div class="col-lg-12">
         @include('includes.mensaje')
         <div class="box box-success">
