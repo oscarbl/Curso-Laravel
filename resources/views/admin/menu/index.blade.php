@@ -16,12 +16,13 @@ Menú
 @endsection
 
 @section('contenido')
-<div class="">
+<div class="row">
     <div class="col-lg-12">
         @include('includes.mensaje')
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Menús</h3>
+        <div class="card card-outline card-blue">
+            <div class="card-header with-border">
+                <h3 class="card-title">Menús</h3>
+                <a href="{{route('crear_menu')}}" class="btn btn-success btn-sm pull-right">Crear Menu</a>
             </div>
             <div class="box-body">
                 @csrf

@@ -27,11 +27,9 @@
 <body class="hold-transition sidebar-mini layout-boxed">
 
     <div class="wrapper">
-        <div>
-            <!-- Inicio Header->
+        <!-- Inicio Header->
             @include("theme/$theme/header")
             <!-- Fin Header -->
-        </div>
 
         <!-- Inicio Aside ->
         @include("theme/$theme/aside")
