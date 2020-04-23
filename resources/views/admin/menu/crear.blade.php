@@ -4,7 +4,9 @@ Sistemas de Menus
 
 @endsection
 @section('scripts')
-<script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}"></script>
+<script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript">
+    >
+</script>
 @endsection
 
 @section('contenido')
@@ -12,7 +14,7 @@ Sistemas de Menus
 @include('includes.mensaje')
 <div class="card card-outline card-danger">
     <div class="card-header with-border">
-        <h3 class="card-title">Crear Menu</h3>
+        <h3 class="card-title">Crear Menús</h3>
         <a href="{{route('menu')}}" class="btn btn-info btn-sm pull-right">Listado</a>
     </div>
     <!-- /.card-header -->
