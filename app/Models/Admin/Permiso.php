@@ -8,4 +8,6 @@ class Permiso extends Model
 {
     //Creamos un metodo protected para decirle a Laravel que utilizamos el nombre de las tablas en singular
     protected $table = "permiso";
+    protected $fillable = ['nombre', 'slug'];
+    protected $guarded = ['id'];
 }
