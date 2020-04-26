@@ -12,7 +12,8 @@ Permisos
     @include('includes.mensaje')
     <div class="card-header with-border">
         <h3 class="card-title">Permisos</h3>
-        <a href="{{route('crear_permiso')}}" class="btn btn-success btn-sm pull-right">Crear permiso</a>
+        <a href="{{route('crear_permiso')}}" class="btn btn-success btn-sm pull-right">
+            <i class="fa fa-fw fa-plus-circle"></i>Crear permiso</a>
     </div>
     <!-- /.card-header -->
     <div class="card-body p-0">
