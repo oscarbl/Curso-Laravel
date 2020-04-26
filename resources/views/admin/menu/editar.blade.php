@@ -1,11 +1,10 @@
 @extends("theme.$theme.layout")
 @section('titulo')
 Sistemas de Menus
-
 @endsection
+
 @section('scripts')
 <script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript">
-    >
 </script>
 @endsection
 

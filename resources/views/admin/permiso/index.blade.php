@@ -19,10 +19,9 @@ Permisos
         <table class="table table-striped table-bordered table-hover" id="tabla-data">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th style="width: 40px">Slug</th>
-                    <th></th>
+                    <th style="width: 10%">ID</th>
+                    <th style="width: 50%">Nombre</th>
+                    <th style="width: 20%">Slug</th>
                     <th class="width70"></th>
                 </tr>
             </thead>
@@ -32,13 +31,12 @@ Permisos
                     <td>{{$item->id}}</td>
                     <td>{{$item->nombre}}</td>
                     <td>{{$item->slug}}</td>
-                    <td></td>
                     <td>
-                        <a href="{{route("editar_permiso", ['id' => $permiso->id])}}" class="btn-accion-tabla tooltipsC"
+                        <a href="{{route("editar_permiso", ['id' => $item->id])}}" class="btn-accion-tabla tooltipsC"
                             title="Editar este registro">
                             <i class="fa fa-edit"></i>
                         </a>
-                        <form action="{{route("eliminar_permiso",  ['id' => $permiso->id])}}"
+                        <form action="{{route("eliminar_permiso",  ['id' => $item->id])}}"
                             class="d-inline form-eliminar" method="POST">
                             @csrf @method("delete")
                             <button type="submit" class="btn-accion-tabla eliminar tooltipsC"
