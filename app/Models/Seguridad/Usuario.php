@@ -20,6 +20,11 @@ class Usuario extends Authenticatable
 
     public function setSession($roles)
     {
+        Session::put([
+            'usuario' => $this->usuario,
+            'usuario_id' => $this->id,
+            'nombre_usuario' => $this->nombre
+        ]);
         if (count($roles) == 1) {
             Session::put(
                 [
@@ -30,7 +35,8 @@ class Usuario extends Authenticatable
                     'nombre_usuario' => $this->nombre
                 ]
             );
-        }
+        } else {
+            Session::put('roles', $roles);
     }
 
     public function setPasswordAttribute($pass)

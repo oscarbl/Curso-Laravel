@@ -50,7 +50,6 @@ class UsuarioController extends Controller
 
     public function eliminar(Request $request, $id)
     {
-        //
         if ($request->ajax()) {
             $usuario = Usuario::findOrFail($id);
             $usuario->roles()->detach();
