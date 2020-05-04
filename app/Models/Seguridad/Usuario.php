@@ -30,13 +30,11 @@ class Usuario extends Authenticatable
                 [
                     'rol_id' => $roles[0]['id'],
                     'rol_nombre' => $roles[0]['nombre'],
-                    'usuario' => $this->usuario,
-                    'usuario_id' => $this->id,
-                    'nombre_usuario' => $this->nombre
                 ]
             );
         } else {
             Session::put('roles', $roles);
+        }
     }
 
     public function setPasswordAttribute($pass)

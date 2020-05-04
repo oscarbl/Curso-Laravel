@@ -24,6 +24,7 @@
             </div>
         </div>
     </form>
+
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <!-- Header Navbar: style can be found in header.less -->
@@ -143,15 +144,11 @@
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Seguidores</a>
+                                    @if(session()->get("roles") && count(session()->get("roles")) > 1)
+                                    <div class="col-xs-6 text-center">
+                                        <a href="#" class="cambiar-rol">Cambiar Rol</a>
                                     </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">- Sales -</a>
-                                    </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">- Friends -</a>
-                                    </div>
+                                    @endif
                                 </div>
                             </li>
                             <!-- Menu Footer-->
