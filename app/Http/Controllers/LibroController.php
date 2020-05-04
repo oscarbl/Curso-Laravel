@@ -15,7 +15,7 @@ class LibroController extends Controller
     public function index()
     {
         //dd(session()->all());
-        can('listar-libros');
+        can('listar-libro');
         $datas = Libro::orderBy('id')->get();
         return view('libro.index', compact('datas'));
     }
@@ -27,7 +27,7 @@ class LibroController extends Controller
      */
     public function crear()
     {
-        can('crear-libros');
+        can('crear-libro');
         return view('libro.crear');
     }
 
