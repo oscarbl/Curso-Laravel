@@ -33,7 +33,6 @@ Libros
                     <tbody>
                         @foreach ($datas as $data)
                         <tr>
-                            <td>{{$data->titulo}}</td>
                             <td><a href="{{route('ver_libro', $data)}}" class="ver-libro">{{$data->titulo}}</a></td>
                             <td>{{$data->cantidad}}</td>
                             <td>
@@ -61,16 +60,17 @@ Libros
 </div>
 <div class="modal fade" id="modal-ver-libro" tabindex="-1">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-info">
             <div class="modal-header">
+                <h4 class="modal-title">Libro</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title">Libro</h4>
+
             </div>
             <div class="modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cerrar</button>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
