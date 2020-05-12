@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UsuarioAdministradorSeeder extends Seeder
 {
@@ -15,7 +16,7 @@ class UsuarioAdministradorSeeder extends Seeder
         DB::table('usuario')->insert([
             'usuario' => 'admin',
             'nombre' => 'Administrador',
-            'password' => bcrypt('pass123')
+            'password' => Hash::make('pass123')
         ]);
 
         DB::table('usuario')->insert([

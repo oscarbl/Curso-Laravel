@@ -39,9 +39,9 @@ class Usuario extends Authenticatable
             Session::put('roles', $roles);
         }
     }
-    /* 
+
     public function setPasswordAttribute($pass)
     {
         $this->attributes['password'] = Hash::make($pass);
-    } */
+    }
 }

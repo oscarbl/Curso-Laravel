@@ -16,9 +16,8 @@ class PermisoController extends Controller
      */
     public function index()
     {
-        //dd('Permiso');
-        $permisos = Permiso::orderby('id')->get(); //Utilizo eloquent para ordenar mi data por id
-        return view('admin.permiso.index', compact('permisos'));
+        $datas = Permiso::orderBy('id')->get();
+        return view('admin.permiso.index', compact('datas'));
     }
 
     /**

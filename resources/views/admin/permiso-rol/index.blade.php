@@ -13,7 +13,7 @@ Permiso - Rol
         @include('includes.mensaje')
         <div class="card card-success">
             <div class="card-header with-border">
-                <h3 class="card-title">Menús - Rol</h3>
+                <h3 class="card-title">Permiso - Rol</h3>
             </div>
             <div class="card-body">
                 @csrf

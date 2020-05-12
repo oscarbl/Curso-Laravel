@@ -109,3 +109,4 @@ class LibroController extends Controller
             abort(404);
         }
     }
+}
