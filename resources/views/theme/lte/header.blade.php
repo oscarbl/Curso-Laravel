@@ -1,3 +1,6 @@
+@php
+use Carbon\carbon;
+@endphp
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -137,8 +140,12 @@
                                     alt="User Image">
 
                                 <p>
-                                    {{session()->get('nombre_usuario') ?? 'Invitado'}}- Web Developer
-                                    <small>Member since Nov. 2012</small>
+                                    {{session()->get('nombre_usuario') ?? 'Invitado'}}-
+                                    {{ session()->get('rol_nombre','Guest') }}
+                                    @auth
+                                    <small>Registrado desde
+                                        {{ Carbon::parse(auth()->user()->created_at)->year }}</small>
+                                    @endauth
                                 </p>
                             </li>
                             <!-- Menu Body -->
